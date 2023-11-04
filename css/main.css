@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Pompiere&display=swap');
+
+*,
+*:before,
+*:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* || VARIABLES */
+:root {
+    --FF: 'Pompiere', sans-serif;
+    --FONT-COLOR: #060c0e;
+    --BG-COLOR: #f8fbfc;
+    --PRIMARY-COLOR: #9ec5d6;
+    --SECONDARY-COLOR: #dbe9f0;
+    --ACCENT: #4b93b4;
+
+    /* DARK MODE */
+    --DARK-FONT-COLOR: #f1f7f9;
+    --DARK-BG-COLOR: #030607;
+    --DARK-PRIMARY-COLOR: #295061;
+    --DARK-SECONDARY-COLOR: #0f1d24;
+    --DARK-ACCENT: #4b93b4;
+}
+
+
+/* || GENERAL */
+
+body {
+    font-family: var(--FF);
+    background-color: var(--BG-COLOR);
+    color: var(--FONT-COLOR); 
+
+    margin: 20px;
+    padding: 0;
+    text-align: center;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 100px 300px;
+    gap: 10px;
+}
+
+img {
+    max-width: 1080px;
+    max-height: 720px;
+}
+
+
+/* || GALLERY */
+
+.gallery-item {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.gallery-item .images {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.gallery-item .images img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 50%;
+    cursor: pointer;
+    transition: .5s ease-in-out;
+}
+
+.gallery-item:hover .images img {
+    transform: scale(1.2);
+}
+
+.gallery-item {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.gallery-item .images {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.gallery-item .images img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 50%;
+    cursor: pointer;
+    transition: .5s ease-in-out;
+}
+
+.gallery-item:hover .images img {
+    transform: scale(1.2);
+}
+
+.text {
+    font-size: 25px;
+    color: var(--SECONDARY-COLOR);
+    opacity: 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+} 
+
+
+
+
+/* || NATURE GALLERY */
+/* 
+.container, #nature {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 200px 400px;
+    gap: 10px;
+}
+
+.gallery-item-nat {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.gallery-item-nat .images-nat {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.gallery-item-nat .images-nat img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 50%;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+
+.gallery-item-nat:hover .images-nat img {
+    transform: scale(.95);
+} */

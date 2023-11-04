@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Pompiere&display=swap');
+
+*,
+*:before,
+*:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* || VARIABLES */
+:root {
+    --FF: 'Pompiere', sans-serif;
+    --FONT-COLOR: #060c0e;
+    --BG-COLOR: #f8fbfc;
+    --PRIMARY-COLOR: #9ec5d6;
+    --SECONDARY-COLOR: #dbe9f0;
+    --ACCENT: #4b93b4;
+
+    /* DARK MODE */
+    --DARK-FONT-COLOR: #f1f7f9;
+    --DARK-BG-COLOR: #030607;
+    --DARK-PRIMARY-COLOR: #295061;
+    --DARK-SECONDARY-COLOR: #0f1d24;
+    --DARK-ACCENT: #4b93b4;
+}   
+
+
+/* || GENERAL */
+
+body {
+    font-family: var(--FF);
+    background-color: var(--BG-COLOR);
+    color: var(--FONT-COLOR);
+    min-height: 100vh;
+}
+
+.wrappe {
+    max-width: 75rem;
+    padding: 2rem;
+    margin: 0 auto;
+}
+
+
+/* || GALLERY */
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, auto));
+    /* grid-template-rows: repeat(auto-fit, minmax(20rem, auto)); */
+    gap: .5rem;
+}
+
+
+.gallery__image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
